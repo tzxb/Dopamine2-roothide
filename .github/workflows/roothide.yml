@@ -1,9 +1,6 @@
 name: "*** build tipa file ***"
 
-on:
-  schedule:
-    - cron: '0 */2 * * *' # every 2 hours
-  workflow_dispatch:
+on：
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
